@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Demo App</h1>
+
+
+<%= button_to 'requestToken', :controller => "demos", :action => "requestToken" %>
+
+<p id="notice"><%= @tokenjson %></p>
+
+<%= button_to 'getRainbowURL', :controller => "demos", :action => "getRainbowGraph", :tokenjson => @tokenjson %>
+
+<p id="notice"><%= @rainbowurl %></p>
+
+<%= button_to 'getGraph', :controller => "demos", :action => "getGraph", :tokenjson => @tokenjson, :rainbowurl => @rainbowurl %>
+
+<iframe src= <%= @response %>>new frame</iframe>>
+
+<br>s
+
